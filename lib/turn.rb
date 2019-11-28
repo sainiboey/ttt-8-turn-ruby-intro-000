@@ -6,6 +6,7 @@ puts "-----------"
 puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+
 def valid_move?(board,index)
   len = board.length
   if !(position_taken?(board,index)) && index.between?(0,len-1)
