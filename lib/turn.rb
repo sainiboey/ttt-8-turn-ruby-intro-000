@@ -31,9 +31,9 @@ def turn(board)
   move = gets.chomp
   index = input_to_index(move)
   while !(valid_move?(board,index))
-    move = turn(board)
+    index = turn(board)
   end
-  move(board,move,str = "X")
+  move(board,index,str = "X")
   display_board(board)
 end
 def move(board,index,str = "X")
