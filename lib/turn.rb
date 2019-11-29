@@ -32,6 +32,7 @@ def turn(board)
   index = input_to_index(move)
   while !(valid_move?(board,index))
      turn(board)
+     break
   end
   move(board,index,str = "X")
   display_board(board)
