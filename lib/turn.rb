@@ -26,6 +26,9 @@ def position_taken?(board, index)
   end
 end
 
+def turn(board)
+  puts "please enter 1-9:"
+end
 def move(board,index,str = "X")
   board[index] = str
 end
