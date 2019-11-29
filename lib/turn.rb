@@ -30,6 +30,11 @@ def turn(board)
   puts "please enter 1-9:"
   move = gets.chomp
   index = input_to_index(move)
+  while !(valid_move?(board,index))
+    move = turn(board)
+  end
+  move(board,move,str = "X")
+  display_board(board)
 end
 def move(board,index,str = "X")
   board[index] = str
