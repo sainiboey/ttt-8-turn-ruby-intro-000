@@ -28,6 +28,8 @@ end
 
 def turn(board)
   puts "please enter 1-9:"
+  move = gets.chomp
+  index = input_to_index(move)
 end
 def move(board,index,str = "X")
   board[index] = str
